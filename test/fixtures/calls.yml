@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opened_by_user: one
+  assigned_user: one
+  priority: MyString
+  status: MyString
+  call_type: MyString
+  service_level: MyString
+  description: MyText
+  contact_number: MyString
+  conclusion_description: MyText
+  rating: 1
+  rating_description: MyText
+
+two:
+  opened_by_user: two
+  assigned_user: two
+  priority: MyString
+  status: MyString
+  call_type: MyString
+  service_level: MyString
+  description: MyText
+  contact_number: MyString
+  conclusion_description: MyText
+  rating: 1
+  rating_description: MyText

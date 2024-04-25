@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: 0802
+  port: 5432
+  # schema_search_path: myapp,sharedapp,public
+  # min_messages: notice
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: service_desk_development
+
+production:
+  <<: *default
+  database: service_desk_production
+  username: service_desk
+  password: <%= ENV["SERVICE_DESK_DATABASE_PASSWORD"] %>
